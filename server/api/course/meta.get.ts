@@ -2,7 +2,7 @@ import { PrismaClient, Prisma } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const lessonSelect = Prisma.validator<Prisma.LessonArgs>()({
+const lessonSelect = Prisma.validator<Prisma.LessonDefaultArgs>()({
   select: {
     title: true,
     slug: true,
