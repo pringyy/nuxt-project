@@ -15,7 +15,6 @@ import useFirstLesson from '@/composables/useFirstLesson';
 
 const firstLesson = ref();
 
-onMounted(async () => {
   firstLesson.value = await useFirstLesson();
-});
+
 </script>
